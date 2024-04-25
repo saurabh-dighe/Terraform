@@ -1,3 +1,3 @@
 output "list-print" {
-    value = list-ex
+    value = var.list-ex
 }
