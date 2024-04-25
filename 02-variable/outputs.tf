@@ -30,6 +30,6 @@ output "fav-city" {
 
 
 variable "state" {}
-output "state" {
+output "state-op" {
   value = var.state
 }
