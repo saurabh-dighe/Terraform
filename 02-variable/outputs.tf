@@ -19,5 +19,5 @@ output "list-ex-op" {
 }
 
 output "map-ex-op" {
-    value = "Name is ${var.map-ex[0]} and age is ${var.map-ex[1]} also he is ${var.map-ex[2]} tall"
+    value = "Name is ${var.map-ex["name"]} and age is ${var.map-ex["age"]} also he is ${var.map-ex["height"]} tall"
 }
