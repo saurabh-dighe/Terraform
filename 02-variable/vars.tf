@@ -2,6 +2,10 @@ variable "sample" {
     default = "Terraform"
 }
 
+variable "list-ex" {
+  default = ["sauarbh", 26, "6ft", "sangola"]
+}
+
 output "sample-op" {
     value = var.sample 
 }
