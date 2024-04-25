@@ -21,3 +21,9 @@ output "list-ex-op" {
 output "map-ex-op" {
     value = "Name is ${var.map-ex["name"]} and age is ${var.map-ex["age"]} also he is ${var.map-ex["height"]} tall"
 }
+
+#Declairing empty varible and value is paased through .tfvars file
+variable "city" {}
+output "fav-city" {
+    value = var.city
+}
