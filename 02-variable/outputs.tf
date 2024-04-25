@@ -27,3 +27,9 @@ variable "city" {}
 output "fav-city" {
     value = "I'm for ${var.city} city"
 }
+
+
+variable "state" {}
+output "state" {
+  value = var.state
+}
