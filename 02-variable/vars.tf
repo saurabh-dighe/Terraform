@@ -9,3 +9,7 @@ output "sample-op" {
 output "sample-op-with-vars" {
     value = "Value of sample is ${var.sample}"  
 }
+
+output "sample" {
+    value = "Sample output"
+}
