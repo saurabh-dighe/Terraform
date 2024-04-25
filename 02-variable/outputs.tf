@@ -25,5 +25,5 @@ output "map-ex-op" {
 #Declairing empty varible and value is paased through .tfvars file
 variable "city" {}
 output "fav-city" {
-    value = var.city
+    value = "I'm for ${var.city} city"
 }
