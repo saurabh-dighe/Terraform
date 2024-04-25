@@ -6,14 +6,10 @@ variable "list-ex" {
   default = ["sauarbh", 26, "6ft", "sangola"]
 }
 
-output "sample-op" {
-    value = var.sample 
-}
-
-output "sample-op-with-vars" {
-    value = "Value of sample is ${var.sample}"  
-}
-
-output "sample" {
-    value = "Sample output"
+variable "map-ex" {
+  default = {
+    name = "Saurabh",
+    age = 26,
+    height = "6ft"
+  }
 }
