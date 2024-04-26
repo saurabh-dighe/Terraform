@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "tf-instance"
+    Name = "tf-instance-dev"
   }
 }
 
