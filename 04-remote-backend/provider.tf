@@ -2,7 +2,7 @@ provider "aws" {}
 
 terraform {
   backend "s3" {
-    bucket   = "terraform-statefilr-saurabh"
+    bucket   = "terraform-statefile-saurabh"
     key      = "dev/ec2"
   }
 }
