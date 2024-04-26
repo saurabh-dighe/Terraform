@@ -23,13 +23,13 @@ output "map-ex-op" {
 }
 
 #Declairing empty varible and value is paased through .tfvars file
-variable "city" {}
+variable "city" {default = "pune"}
 output "fav-city" {
     value = "I'm for ${var.city} city"
 }
 
 
 variable "state" {}
-output "state-op" {
-  value = var.state
-}
+# output "state-op" {
+#   value = var.state
+# }
