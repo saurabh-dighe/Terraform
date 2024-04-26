@@ -33,3 +33,5 @@ variable "state" {}
 # output "state-op" {
 #   value = var.state
 # }
+
+# gp; terraform init; terraform plan --var-file=def.tfvars; terraform apply -auto-approve --var-file=def.tfvars
