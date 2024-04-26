@@ -1,6 +1,6 @@
 resource "aws_instance" "remote" {
   ami           = "ami-072983368f2a6eab5"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name = "tf-instance-remote"
