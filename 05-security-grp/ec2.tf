@@ -12,7 +12,7 @@ output "tf-private-IP" {
   value = aws_instance.remote.private_ip
 }
 resource "aws_security_group" "remote-sg" {
-  name   = "remote-sg"
+  name   = "remote-sg-allow-ssh"
   vpc_id = "vpc-0b491c91c56da8a5b"
 
   ingress {
