@@ -1,6 +1,7 @@
 resource "aws_instance" "remote" {
-  ami           = "ami-072983368f2a6eab5"
-  instance_type = "t2.micro"
+  ami                       = "ami-072983368f2a6eab5"
+  instance_type             = "t2.micro"
+  vpc_security_group_ids    = [aws_security_group.remote-sg.id]
 
   tags = {
     Name = "tf-instance-remote"
