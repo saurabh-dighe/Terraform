@@ -10,9 +10,9 @@ resource "aws_instance" "remote" {
 output "tf-private-IP" {
   value = aws_instance.remote.private_ip
 }
-resource "aws_security_group" "example" {
-  name   = "sg"
-  vpc_id = aws_vpc.example.id
+resource "aws_security_group" "remote-sg" {
+  name   = "remote-sg"
+  vpc_id = aws_vpc.remote-sg.id
 
   ingress = []
   egress  = []
