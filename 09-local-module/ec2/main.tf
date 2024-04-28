@@ -2,7 +2,7 @@ resource "aws_instance" "local-module" {
   ami           = "ami-072983368f2a6eab5"
   instance_type = "t3.micro"
   security_groups = [var.sg]
-  depends_on = [sg-module]
+  depends_on = [module.sg-module]
   tags = {
     Name = "tf-instance-dev"
   }
