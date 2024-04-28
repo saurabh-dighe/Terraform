@@ -1,5 +1,5 @@
 resource "aws_security_group" "local_module_sg" {
-  name   = "remote-sg-allow-ssh"
+  name   = "local_module_sg"
   vpc_id = "vpc-0b491c91c56da8a5b"
 
   ingress {
