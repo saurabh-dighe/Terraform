@@ -13,7 +13,7 @@ output "instance-ID" {
 
 data "aws_ami" "custom_ami" {
   most_recent      = true
-  name_regex       = "^DevOps-LabImage-Centos$"
+  name_regex       = "DevOps-LabImage-Centos-8"
   owners           = ["355449129696"]
 }
 
