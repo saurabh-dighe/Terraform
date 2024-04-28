@@ -1,8 +1,8 @@
 resource "aws_instance" "local-module" {
-  ami           = "ami-072983368f2a6eab5"
-  instance_type = "t2.micro"
-  security_groups = [var.sg]
-  depends_on = [var.sg]
+  ami                        = "ami-072983368f2a6eab5"
+  instance_type              = "t2.micro"
+  vpc_security_group_ids     = [var.sg]
+
   tags = {
     Name = "tf-instance-dev"
   }
