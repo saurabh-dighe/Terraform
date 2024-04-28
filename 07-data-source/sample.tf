@@ -8,5 +8,5 @@ data "aws_instance" "foo" {
 }
 
 output "instance-ID" {
-  value = data.aws_instance.foo
+  value = data.aws_instance.foo.id
 }
