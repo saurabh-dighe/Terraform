@@ -7,3 +7,7 @@ module "ec2-module" {
 module "sg-module" {
   source = "./sg"
 }
+
+output "sg-id" {
+  value = module.sg-module.sg-ID
+}
