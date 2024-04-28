@@ -8,9 +8,9 @@ resource "aws_instance" "sample" {
   }
 }
 
-output "tf-private-IP" {
-  value = aws_instance.sample.private_ip
-}
+# output "tf-private-IP" {
+#   value = aws_instance.sample.private_ip
+# }
 
 # terraform console
 # max(3, 5, 1)
