@@ -4,7 +4,7 @@ resource "aws_instance" "sample" {
   count = 3                 #Count is a function used to create multiple resourses with similar properties
 
   tags = {
-    Name = "tf-instance-${index[count]+1}"
+    Name = "tf-instance-${count.index+1}"
   }
 }
 
