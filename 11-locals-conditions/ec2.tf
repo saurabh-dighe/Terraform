@@ -8,12 +8,7 @@ resource "aws_instance" "local-module" {
   instance_type              = local.BU == "SAAS" ? "t3.medium" : "t3.micro"  #If condition satisfies it will take 1st value otherwise 2nd value
   vpc_security_group_ids     = [aws_security_group.terraform_sg.id]
 
-  tags = {
-    Name     = "tf-instance"
-    owners   = local.owners
-    cost     = local.cost
-    director = local.director
-  }
+  tags = local.dev_tag
 }
 
 output "tf-private-IP" {
