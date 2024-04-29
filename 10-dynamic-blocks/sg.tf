@@ -1,5 +1,5 @@
 resource "aws_security_group" "terraform_sg" {
-  name   = "local_module_sg"
+  name   = "terraform_sg"
   vpc_id = "vpc-0b491c91c56da8a5b"
 
   dynamic ingress {
