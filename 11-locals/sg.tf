@@ -21,6 +21,9 @@ resource "aws_security_group" "terraform_sg" {
   }
   tags = {
     Name ="web_sg"
+    owners   = local.owners
+    cost     = local.cost
+    director = local.director    
   }
 }
 
