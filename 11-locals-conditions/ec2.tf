@@ -5,7 +5,7 @@ data "aws_ami" "lab_ami" {
 }
 resource "aws_instance" "local-module" {
   ami                        = data.aws_ami.lab_ami.id
-  instance_type              = "t2.micro"
+  instance_type              = local.BU == "SAAS" ? "t3-medium" : "t3-micro"  #If condition satisfies it will take 1st value otherwise 2nd value
   vpc_security_group_ids     = [aws_security_group.terraform_sg.id]
 
   tags = {
