@@ -5,7 +5,7 @@ data "aws_ami" "lab_ami" {
 }
 resource "aws_instance" "local-module" {
   ami                        = data.aws_ami.lab_ami
-  instance_type              = var.COMPONENT
+  instance_type              = var.component
   vpc_security_group_ids     = [var.sg]
 
   tags = {
