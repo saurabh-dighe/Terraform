@@ -20,7 +20,7 @@ resource "aws_security_group" "terraform_sg" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
   tags = {
-    Name ="web_sg"
+    Name     = "web_sg"
     owners   = local.owners
     cost     = local.cost
     director = local.director    
