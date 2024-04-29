@@ -14,7 +14,7 @@ resource "aws_instance" "local-module" {
   }
 
   tags = {
-    Name = var.component-var.env
+    Name = var.component
   }
 }
 
