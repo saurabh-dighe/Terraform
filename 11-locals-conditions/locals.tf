@@ -6,7 +6,6 @@ locals {
     director  = "EdisonRoy"
     cost      = 500501  
   }
-
 }
 
 locals {
