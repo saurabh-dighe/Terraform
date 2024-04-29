@@ -11,7 +11,7 @@ variable "ingress_rules" {
         description     = "app"
         from_port       = 8080
         to_port         = 8080
-        protocol        = "http"
+        protocol        = "HTTP"
         cidr_blocks     = ["0.0.0.0/0"]
     },
     {
