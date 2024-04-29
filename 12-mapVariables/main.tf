@@ -12,9 +12,9 @@ module "sg-module" {
   source = "./sg"
 }
 
-output "sg-id" {
-  value = module.sg-module.sg-ID
-}
-output "private_ip" {
-  value = module.ec2-module.tf-private-IP
-}
+# output "sg-id" {
+#   value = module.sg-module.sg-ID
+# }
+# output "private_ip" {
+#   value = module.ec2-module.tf-private-IP
+# }
