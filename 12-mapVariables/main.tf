@@ -5,7 +5,8 @@ module "ec2-module" {
   sg            = module.sg-module.sg-ID
   component     = each.key
   instance_type = each.value.instance_type
-#   depends_on = [module.sg-module]
+  volume_type   = each.value.volume_type
+  volume_size   = each.value.volume_size
 }
 
 module "sg-module" {
