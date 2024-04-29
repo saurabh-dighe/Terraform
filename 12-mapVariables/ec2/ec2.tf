@@ -5,11 +5,11 @@ data "aws_ami" "lab_ami" {
 }
 resource "aws_instance" "local-module" {
   ami                        = data.aws_ami.lab_ami.id
-  instance_type              = var.component
+  instance_type              = var.instance_type
   vpc_security_group_ids     = [var.sg]
 
   tags = {
-    Name = "tf-instance-dev"
+    Name = var.component
   }
 }
 
