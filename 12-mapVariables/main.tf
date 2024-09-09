@@ -1,5 +1,5 @@
 module "ec2-module" {
-  for_each = var.COMPONENTS
+  for_each      = var.COMPONENTS
 
   source        = "./ec2"
   sg            = module.sg-module.sg-ID
@@ -10,12 +10,12 @@ module "ec2-module" {
 }
 
 module "sg-module" {
-  source = "./sg"
+  source        = "./sg"
 }
 
 # output "sg-id" {
-#   value = module.sg-module.sg-ID
+#   value       = module.sg-module.sg-ID
 # }
 # output "private_ip" {
-#   value = module.ec2-module.tf-private-IP
+#   value       = module.ec2-module.tf-private-IP
 # }
