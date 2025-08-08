@@ -27,7 +27,7 @@ variable "city" {
     default = "pune"
 }
 output "fav-city" {
-    value = "I'm for ${var.city} city"
+    value = null
 }
 
 
