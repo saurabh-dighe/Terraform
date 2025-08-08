@@ -27,7 +27,7 @@ variable "city" {
     default = "pune"
 }
 output "fav-city" {
-    value = null
+    value = "Pune city"
 }
 
 
